@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-script {
+    font-family: 'Alex Brush', cursive;
+  }
+  .font-display-serif {
+    font-family: 'Cinzel', serif;
+  }
+  .font-serif-luxury {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+  }
+  .font-heading {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+@keyframes shimmer {
+  0% { transform: translateX(-100%); opacity: 0; }
+  50% { opacity: 0.6; }
+  100% { transform: translateX(100%); opacity: 0; }
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(193, 139, 99, 0.3), inset 0 0 6px rgba(193, 139, 99, 0.2);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(193, 139, 99, 0.75), inset 0 0 12px rgba(193, 139, 99, 0.4);
+  }
+}
+
+@keyframes sparkle {
+  0%, 100% { opacity: 0.2; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.2); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite ease-in-out;
+}
+
+.animate-sparkle {
+  animation: sparkle 3s infinite ease-in-out;
+}
+

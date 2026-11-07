@@ -1,0 +1,7 @@
+{
+  "name": "Beauty Parlour - Luxury Salon",
+  "description": "Luxury beauty parlour offering premier hair & makeup, facial treatments, hair care, bridal makeup, and nail art styling.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+
